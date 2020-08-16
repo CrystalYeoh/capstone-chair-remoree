@@ -20,11 +20,6 @@ class DishDetail extends Component {
     }
 
     renderComments(comments) {
-        console.log(comments);
-
-        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-
 
         if (comments != null) {
 
@@ -37,7 +32,7 @@ class DishDetail extends Component {
                                 {com.comment}
                             </p>
                             <p className="text-left">
-                                --{com.author} ,{new Intl.DateTimeFormat(com.date)}
+                                --{com.author} ,{new Intl.DateTimeFormat('en-US',{year:'numeric',month:'short',day:'2-digit'}).format(new Date(Date.parse(com.date)))}
                             </p>
                         </div>
                     )}
@@ -51,8 +46,8 @@ class DishDetail extends Component {
     render() {
         return (
                     <div className="row" >
-                        <div className="col-12 col-md-5 m-1">{this.renderDish(this.props.selectedDish)}</div>
-                        <div className="col-12 col-md-5 m-1">{this.renderComments(this.props.selectedDish ? this.props.selectedDish.comments : null)}</div>
+                        <div className="col-12 col-md-5 m-1">{this.renderDish(this.props.dish)}</div>
+                        <div className="col-12 col-md-5 m-1">{this.renderComments(this.props.dish ? this.props.dish.comments : null)}</div>
                     </div>
         );
     }
