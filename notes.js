@@ -1,8 +1,14 @@
-//js .map( operator maps the dishes to   
-const menu = this.state.dishes.map((dish)=>{
-    return(
-        <div key={dish.id} className="col-12 mt-5">
-            
+render() {
+    return (
+        <div>
+            <Header />
+            <Switch>
+                <Route path="/home" component={HomePage}/>
+                <Route exact path="/menu" component={()=><Menu dishes ={this.state.dishes} />} />
+            </Switch>
+            <Footer />
         </div>
-    )
+    );
 }
+
+//exact becasue later for dishdetail, we will be using /menu as well
