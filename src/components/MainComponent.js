@@ -26,6 +26,14 @@ class Main extends Component {
         };
     }
 
+<<<<<<< HEAD
+=======
+
+    onDishSelect(dishId) {
+        this.setState({ selectedDish: dishId });
+    }
+
+>>>>>>> 9cd41469996ef92a0cf169bfde322ede762da57e
     render() {
         const HomePage = () =>{
             return(
@@ -47,6 +55,7 @@ class Main extends Component {
 
         return (
             <div>
+<<<<<<< HEAD
                 <Header />
                 <Switch>
                     <Route path="/home" component={HomePage}/>
@@ -57,6 +66,16 @@ class Main extends Component {
                     <Redirect to="/home" />
                 </Switch>
                 <Footer />
+=======
+                <Navbar dark color="primary">
+                    <div className="container">
+                        <NavbarBrand href="/">Mummy's Restaurant Lolz</NavbarBrand>
+                    </div>
+                </Navbar>
+                <Menu dishes={this.state.dishes} 
+                    onClick={(dishId)=>this.onDishSelect(dishId)}/>
+                <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
+>>>>>>> 9cd41469996ef92a0cf169bfde322ede762da57e
             </div>
         );
     }
