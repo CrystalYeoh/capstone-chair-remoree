@@ -30,9 +30,9 @@ class Header extends Component {
 
     }
 
-    handleLogin(event){
+    handleLogin(event) {
         this.toggleModal();
-        alert("Username: "+this.username.value + "Password: " + this.password.value + "Remember: " + this.remember.checked)
+        alert("Username: " + this.username.value + "Password: " + this.password.value + "Remember: " + this.remember.checked)
         event.preventDefault();
     }
 
@@ -90,23 +90,23 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
+                    <ModalHeader toggle={this.toggleModal}>Logiun</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleLogin}>
                             <FormGroup>
                                 <Label htmlFor='username'>Username</Label>
-                                <Input type='text' id='username' name='username' 
-                                innerRef={(input) =>this.username = input}/>
+                                <Input type='text' id='username' name='username'
+                                    innerRef={(input) => this.username = input} />
                             </FormGroup>
                             <FormGroup>
                                 <Label htmlFor='password'>Password</Label>
                                 <Input type='password' id='password' name='password'
-                                innerRef={(input) =>this.password = input} />
+                                    innerRef={(input) => this.password = input} />
                             </FormGroup>
                             <FormGroup check>
                                 <Label check>
                                     <Input type='checkbox' name='remember'
-                                    innerRef={(input) =>this.remember = input} />
+                                        innerRef={(input) => this.remember = input} />
                                     Remember me
                                 </Label>
                             </FormGroup>

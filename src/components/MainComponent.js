@@ -22,7 +22,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispathToProps = (dispatch) =>  ({
-    addComment:(dishId, rating, autho, comment) => dispatch(addComment(dishId, rating, autho, comment))
+    addComment:(dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
 });    
 
 class Main extends Component {
