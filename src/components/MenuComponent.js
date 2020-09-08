@@ -37,7 +37,7 @@ const Menu = (props) => {
                 </div>
             </div>
         );
-    } else if (props.dishes.errMes) {
+    } else if (props.dishes.errMess) {
         return (
             <div className="container">
                 <div className="row">

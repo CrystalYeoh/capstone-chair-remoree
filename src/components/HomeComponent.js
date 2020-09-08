@@ -9,7 +9,6 @@ function RenderCard({ item, isLoading, errMess }) {
             <Loading />
         )
     } else if (errMess) {
-        console.log("error message:" + errMess);
         return (
             <h4>{errMess} </h4>
         )
@@ -40,7 +39,9 @@ function Home(props) {
                         errMess={props.promosErrMess} />
                 </div>
                 <div className="col-12 col-md m-1">
-                    <RenderCard item={props.leader} />
+                    <RenderCard item={props.leader}
+                    isLoading={props.leadersLoading}
+                    errMess={props.leadersErrMess} />
                 </div>
             </div>
         </div>
