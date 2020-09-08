@@ -24,7 +24,7 @@ export const postComment = (dishId, rating, author, comment) => (dispatch) => {
             'Content-Type': 'application/json'
         },
         credentials: 'same-origin'
-    })
+    })  
         .then(response => {
             if (response.ok) {
                 return response;
