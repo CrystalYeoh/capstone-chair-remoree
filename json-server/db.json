@@ -1,0 +1,286 @@
+{
+  "dishes": [
+    {
+      "id": 0,
+      "name": "Features",
+      "image": "images/features.png",
+      "category": "mains",
+      "label": "Hot",
+      "price": "4.99",
+      "featured": true,
+      "description": "A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer."
+    },
+    {
+      "id": 1,
+      "name": "Pictures",
+      "image": "images/zucchipakoda.png",
+      "category": "appetizer",
+      "label": "",
+      "price": "1.99",
+      "featured": false,
+      "description": "Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce"
+    }
+  ],
+  "comments": [
+    {
+      "id": 0,
+      "dishId": 0,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "John Lemon",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 1,
+      "dishId": 0,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Paul McVites",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 2,
+      "dishId": 0,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Michael Jaikishan",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 3,
+      "dishId": 0,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Ringo Starry",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 4,
+      "dishId": 0,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "25 Cent",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 5,
+      "dishId": 1,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "John Lemon",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 6,
+      "dishId": 1,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Paul McVites",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 7,
+      "dishId": 1,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Michael Jaikishan",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 8,
+      "dishId": 1,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Ringo Starry",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 9,
+      "dishId": 1,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "25 Cent",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 10,
+      "dishId": 2,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "John Lemon",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 11,
+      "dishId": 2,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Paul McVites",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 12,
+      "dishId": 2,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Michael Jaikishan",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 13,
+      "dishId": 2,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Ringo Starry",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 14,
+      "dishId": 2,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "25 Cent",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 15,
+      "dishId": 3,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "John Lemon",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 16,
+      "dishId": 3,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Paul McVites",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 17,
+      "dishId": 3,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Michael Jaikishan",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 18,
+      "dishId": 3,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Ringo Starry",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 19,
+      "dishId": 3,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "25 Cent",
+      "date": "2011-12-02T17:57:28.556094Z"
+    }
+  ],
+  "promotions": [
+    {
+      "id": 0,
+      "name": "Weekend Grand Buffet",
+      "image": "images/buffet.png",
+      "label": "New",
+      "price": "19.99",
+      "featured": true,
+      "description": "Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person "
+    }
+  ],
+  "leaders": [
+    {
+      "id": 0,
+      "name": "Emil",
+      "image": "images/emil.png",
+      "designation": "EPD Senior",
+      "abbr": "da Leader",
+      "featured": true,
+      "description": "Emil is the big brother of the group as he is the oldest among us and takes initiative in leading the team. He also has the most experience in entrepreneurship, having taken a gap year to do entre in China."
+    },
+    {
+      "id": 1,
+      "name": "Kai Jie",
+      "image": "images/kkj.png",
+      "designation": "ASD Year 3",
+      "abbr": "kkj",
+      "featured": false,
+      "description": "The designer of the group along with Jo wee. 100% A++ aesthetics and makes sure everything is presentable. Also have good ideas and we all wished that there was more of him."
+    },
+    {
+      "id": 2,
+      "name": "Jo Wee",
+      "image": "images/jowee.png",
+      "designation": "ASD Year 3",
+      "abbr": "joey",
+      "featured": false,
+      "description": "Part 2 of the designers group with Kai jie, both of them have made Remoree the beautiful chair it is today. Is the logical voice of the group and always pulls us back if we wonder too far."
+    },
+    {
+      "id": 3,
+      "name": "Daniel",
+      "image": "images/daniu.png",
+      "designation": "EPD Senior",
+      "abbr": "beerbellybuffalo",
+      "featured": false,
+      "description": "funkiest guy in sutd and he is a nice guy but doesnt like to be called a nice guy because he thinks that is a boring defining feature. He helps bring the remoree chair to life along with the other epd kids, making sure its comfortable, lasting and the sensors work to give accurate feedback."
+    },
+    {
+      "id": 4,
+      "name": "Timothy",
+      "image": "images/tim.png",
+      "designation": "EPD Senior",
+      "abbr": "timdimthememes",
+      "featured": false,
+      "description": "another funky guy who is the time keeper of the group. He's a very responsible and hardworking guy that drives the team to our goals. He also has funny memes that really that fuels the soul of the group."
+    },
+    {
+      "id": 5,
+      "name": "Yi Xuan",
+      "image": "images/yixuan.png",
+      "designation": "EPD Senior",
+      "abbr": "TankiestGuy",
+      "featured": false,
+      "description": "Yi Xuan is not all muscles, he is planning to go into computer engineering and will be contributing to the ISTD component of the group while helping out his fellow epd groupmates. He also has a unique sense of humour that either sends you rolling on the floor laughing or nevermind." 
+    },
+    
+    {
+      "id": 6,
+      "name": "Crystal",
+      "image": "images/crystal.png",
+      "designation": "ISTD Senior",
+      "abbr": "ENFP (loud and annoying)",
+      "featured": false,
+      "description": "i made this website and i will do the code code"
+    }
+  ],
+  "feedback": [
+    {
+      "firstname": "fdas",
+      "lastname": "afds",
+      "telnum": "134113",
+      "email": "dafdads@daffas.dfdafd",
+      "agree": true,
+      "contactType": "Email",
+      "message": "afadsfds",
+      "date": "2017-12-04T09:41:49.890Z",
+      "id": 1
+    },
+    {
+      "firstname": "Home",
+      "lastname": "Crystal",
+      "telnum": "21398123",
+      "email": "crystalyeohje@gmail.com",
+      "contactType": "Tel.",
+      "message": "adsfadsfsadf",
+      "date": "2020-09-08T08:11:00.484Z",
+      "id": 2
+    }
+  ]
+}
