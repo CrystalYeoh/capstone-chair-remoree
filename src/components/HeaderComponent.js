@@ -42,29 +42,26 @@ class Header extends Component {
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href="/">
-                            <img src="assets/images/logo.png" height="30" width="41" alt='Ristorante Con Fusion' />
-                        </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/home'>
-                                        <span className='fa fa-home fa-lg' /> Home
+                                         Home
                                         </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/aboutus'>
-                                        <span className='fa fa-info fa-lg' /> About Us
+                                        About Us
                                         </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/menu'>
-                                        <span className='fa fa-list fa-lg' /> Menu
+                                        Products
                                         </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/contactus'>
-                                        <span className='fa fa-address-card fa-lg' /> Contact Us
+                                        Contact Us
                                         </NavLink>
                                 </NavItem>
                             </Nav>
@@ -82,10 +79,15 @@ class Header extends Component {
                 <Jumbotron>
                     <div className="container">
                         <div className="row row-header">
-                            <div className="col-12 col-sm-6">
-                                <h1>Confusing Restaurant Course</h1>
-                                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                            <div className='col-12 col-sm-6'>
+                                <img src="assets/images/remora.gif" height="346" width="600" />
                             </div>
+                            <div className="col-12 col-sm-6">
+                                <h1>Remoree</h1>
+                                <h4>The perfect smart task chair to work from home</h4>
+                                <p>Remoree is a smart ergonomic-focused task chair which is highly customisable and configurable. It collects and processes the data of our customes' sitting habits and recommends a personalised configuration. By using Remoree, users will slowly take on better sitting posture wihich in turn increases comfort, health and productivity.</p>
+                            </div>
+
                         </div>
                     </div>
                 </Jumbotron>
