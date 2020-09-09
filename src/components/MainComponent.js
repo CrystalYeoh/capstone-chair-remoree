@@ -41,8 +41,8 @@ class Main extends Component {
 
     componentDidMount() {
         this.props.fetchDishes();
-        this.props.fetchComments();
-        this.props.fetchPromos();
+        //this.props.fetchComments();
+        //this.props.fetchPromos();
         this.props.fetchLeaders();
     }
 
@@ -56,7 +56,7 @@ class Main extends Component {
                     promotion={this.props.promotions.promotions.filter((promotion) => promotion.featured)[0]}
                     promosLoading={this.props.promotions.isLoading}
                     promosErrMess={this.props.promotions.errMess}
-                    leader={this.props.leaders.leaders.filter((leader) => leader.featured)[0]}
+                    leaders={this.props.leaders.leaders.filter((leader) => leader.featured)}
                     leadersLoading={this.props.leaders.isLoading}
                     leadersErrMess={this.props.leaders.errMess}
                 />
@@ -81,7 +81,7 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path="/home" component={HomePage} />
-                    <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} />} />
+                    <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} comments={this.props.comments}/>} />
                     <Route path="/menu/:dishId" component={DishWithId} />
                     <Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm}
                         postFeedback={this.props.postFeedback} />} />

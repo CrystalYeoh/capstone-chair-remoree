@@ -1,28 +1,41 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardTitle, CardBody, CardText, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
-import {baseUrl} from '../shared/baseUrl';
+import { baseUrl } from '../shared/baseUrl';
+import { Intro } from './IntroComponent';
 
-function RenderMenuItem({ dish, onClick }) {
-    return (
-        <Card>
-            <Link to={`/menu/${dish.id}`}>
-                <CardImg width="100%" src={baseUrl+ dish.image} alt={dish.name} />
-                <CardImgOverlay>
-                    <CardTitle>{dish.name}</CardTitle>
-                </CardImgOverlay>
-            </Link>
-        </Card>
-    );
+
+
+function RenderMenuItem({ dish }) {
+    if (dish != null) {
+        return (
+            <div className="row row-content">
+                <div className="col-12 col-md-5 m-1">
+                    <Card>
+                        <img width="100%" src={"assets/" + dish.image} />
+                    </Card>
+                </div>
+                <div className="col-12 col-md-5 m-1">
+                    <div>
+                        <h4>{dish.name}</h4>
+                        <div>
+                            {dish.description}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    } else {
+        return (<div></div>);
+    }
 
 }
 
 const Menu = (props) => {
-    //no need to use this.props because theres no longer a dish
     const menu = props.dishes.dishes.map((dish) => {
         return (
-            <div key={dish.id} className="col-12 col-md-5 m-1">
+            <div key={dish.id} className="container">
                 <RenderMenuItem dish={dish} />
             </div>
         )
@@ -50,7 +63,7 @@ const Menu = (props) => {
 
         return (
             <div className="container">
-                <div className="row">
+                <div className="row" style={{ 'margin-top': 15, 'margin-left': 2 }}>
                     <Breadcrumb>
                         <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
                         <BreadcrumbItem active>Product Details</BreadcrumbItem>

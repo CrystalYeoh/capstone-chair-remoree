@@ -2,7 +2,7 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
-import {baseUrl} from '../shared/baseUrl';
+import { baseUrl } from '../shared/baseUrl';
 
 function RenderLeader({ leader, isLoading, errMess }) {
 
@@ -10,7 +10,7 @@ function RenderLeader({ leader, isLoading, errMess }) {
         <div key={leader.id} className="col-12 mt-5">
             <Media tag="li">
                 <Media left middle>
-                    <Media object src={baseUrl + leader.image} alt={leader.name} style={{height:100, width:100}} />
+                    <Media object src={baseUrl + leader.image} alt={leader.name} style={{ height: 100, width: 100 }} />
                 </Media>
                 <Media body className="ml-5">
                     <Media heading>{leader.name}</Media>
@@ -50,15 +50,15 @@ function About(props) {
         )
     }
     else {
-
-
         return (
             <div className="container">
-                <div className="row">
+                <div className="row" style={{'margin-top':15, 'margin-left':2}}>
                     <Breadcrumb>
                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
                         <BreadcrumbItem active>About Us</BreadcrumbItem>
                     </Breadcrumb>
+                </div>
+                <div className="row">
                     <div className="col-12">
                         <h3>About Us</h3>
                         <hr />

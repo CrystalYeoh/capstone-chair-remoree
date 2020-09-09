@@ -46,7 +46,7 @@ class Header extends Component {
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/home'>
-                                         Home
+                                        Home
                                         </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -56,7 +56,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/menu'>
-                                        Products
+                                        Our Product
                                         </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -76,23 +76,10 @@ class Header extends Component {
 
                     </div>
                 </Navbar>
-                <Jumbotron>
-                    <div className="container">
-                        <div className="row row-header">
-                            <div className='col-12 col-sm-6'>
-                                <img src="assets/images/remora.gif" height="346" width="600" />
-                            </div>
-                            <div className="col-12 col-sm-6">
-                                <h1>Remoree</h1>
-                                <h4>The perfect smart task chair to work from home</h4>
-                                <p>Remoree is a smart ergonomic-focused task chair which is highly customisable and configurable. It collects and processes the data of our customes' sitting habits and recommends a personalised configuration. By using Remoree, users will slowly take on better sitting posture wihich in turn increases comfort, health and productivity.</p>
-                            </div>
 
-                        </div>
-                    </div>
-                </Jumbotron>
+
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal}>Logiun</ModalHeader>
+                    <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleLogin}>
                             <FormGroup>

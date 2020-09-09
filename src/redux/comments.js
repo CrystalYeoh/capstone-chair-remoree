@@ -6,7 +6,6 @@ export const Comments = (state = {
 }, action) => {
     switch (action.type) {
         case ActionTypes.ADD_COMMENT:
-            console.log("Comment added: " +action.payload.comment)
             var comment = action.payload;
             return {...state, comments:state.comments.concat(comment)};
 
